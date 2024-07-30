@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./Material de Apoio/images/logo.png" alt="capelo e diploma"/>
+            <h1>Calculador de Médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" placeholder="Matéria" required />
+            <input type="number" id="nota-materia" placeholder="Nota da Atividade" min="0" max="10" required />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0"> <!--Unifica o traço abaixo-->
+            <thead>
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota da Atividade</th>
+                    <th>Aprovado:</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td>Média Final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado">---</td>
+                </tr>
+            </tfoot>
+        </table>    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

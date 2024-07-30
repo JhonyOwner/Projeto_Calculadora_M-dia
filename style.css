@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #e7e7e7;
+    padding-top: 100px;   /*Espaçamento Interno, fazendo com que não mude os elementos em volta*/    
+}
+
+header {
+    display: flex;   /*Elementos flexiveis*/
+    align-items: center;   /*Alinhados na Vertical ↑ ↓*/
+    margin-bottom: 40px;   /* Seta uma margem na parte externa aos elementos a baixo*/
+}
+
+header img {
+    height: 36px;   /*Tamanho da Logo Cabeçalho*/
+    margin-right: 16px;   /*Distância para direita*/
+}
+
+header h1 {
+    font-size: 40px;   /*Tamanho da fonte*/
+    font-weight: bold;   /*Estilo da fonte*/
+}
+
+.container {
+    max-width: 960px;   /*Ocupar 960px somente, ocassionando que fique sempre centralizado*/
+    width: 100%;   /*100% do max*/
+    margin: 0 auto;   /*Setar na horizontal → e ←*/   
+}
+
+form {
+    display: flex;   /*Unifica e deixa do mesmo tamanho*/
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;   /*Espaçamento entre os itens*/
+    margin-bottom: 36px;
+}
+
+form button {
+    background-color: #009432;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+form input {
+    font-size: 24px;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid #000000;
+    padding: 16px;
+    font-size: 24;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center;   /*Centraliza na Horizontal ← e →*/
+    font-size: 18px;
+    padding: 16px 0;   /*Apenas nas partes ↑ e ↓*/
+    border-bottom: 1px solid rgba(0,0,0,0.2);   /*Os 4 primeiros significa RGB normal e o ultimo 0.2 dá 20% de transparência*/
+}
+
+table td img {
+    height: 30px;   /*Tamanho da Imagem de aprovação*/
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: #ff0000;
+}
+
+/* Estilos personalizados para o SweetAlert2 */
+/* Personaliza o popup do alerta */
+.swal2-popup {
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    background-color: #f5f5f5; /* Define a cor de fundo do popup */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+}
+/* Personaliza o título do alerta */
+.swal2-title {
+    color: #ff3333; /* Define a cor do título */
+    font-family: "Libre Baskerville", serif;  /* Define a fonte do título */
+}
+/* Personaliza o container do HTML do alerta */
+.swal2-html-container {
+    color: #000000; /* Define a cor do texto */
+    font-family: 'Verdana', serif; /* Define a fonte do texto */
+}
+/* Personaliza o botão de confirmação do alerta */
+.swal2-confirm {
+    background-color: #4CAF50; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+    padding: 10px 20px; /* Define o espaçamento interno do botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+}
+/* Define a cor do botão ao passar o mouse */
+.swal2-confirm:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
